@@ -8,4 +8,4 @@ estimate electric used in everyday life
 - 62070066 นายณัฐวัฒน์ ชวนิช <br>
 <br>
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/downloads/release/python-371/)<br>
+<h2>Made with Kotlin</h2>
