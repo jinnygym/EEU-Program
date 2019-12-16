@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_width="50dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#010101"
+        android:layout_height="wrap_content"
+        android:text="Id" />
+
+    <TextView
+        android:id="@+id/deviceView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Device"
+        android:textColor="#010101" />
+    <TextView
+        android:id="@+id/wattView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Watt"
+        android:textColor="#010101" />
+    <TextView
+        android:id="@+id/hourView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Hr"
+        android:textColor="#010101" />
+    <TextView
+        android:id="@+id/dayView"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Day"
+        android:textColor="#010101" />
+    <TextView
+        android:id="@+id/totalView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Total"
+        android:textColor="#010101" />
+</LinearLayout>
