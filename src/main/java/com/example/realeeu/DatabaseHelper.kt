@@ -19,13 +19,12 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         val COL_3 = "WATT"
         val COL_4 = "HOUR"
         val COL_5 = "DAY"
-        val COL_6 = "TOTAL"
     }
 
 
     override fun onCreate(db: SQLiteDatabase) {
 
-        db.execSQL("CREATE TABLE IF NOT EXISTS $TABLE_NAME(ID INTEGER PRIMARY KEY AUTOINCREMENT , DEVICE  TEXT , WATT INTEGER , HOUR INTEGER, DAY INTEGER, TOTAL DOUBLE)")
+        db.execSQL("CREATE TABLE IF NOT EXISTS $TABLE_NAME(ID INTEGER PRIMARY KEY AUTOINCREMENT , DEVICE  TEXT , WATT INTEGER , HOUR INTEGER, DAY INTEGER)")
 
     }
 
@@ -72,12 +71,9 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         val db = this.writableDatabase
         return db.delete(TABLE_NAME, "ID =? ", arrayOf(id))
     }
-    fun calculateData(watt: Int, hour: Int, day: Int): Boolean?{
+    fun calculateData(): Cursor{
         val db = this.writableDatabase
-        val cv = ContentValues()
-        cv.put(COL_6, (watt/1000)*hour*day)
-        val res = db.insert(TABLE_NAME, null, cv)
-        return !res.equals(-1)
+        return db.rawQuery("SELECT SUM(WATT*HOUR*DAY)/1000 AS UNIT FROM $TABLE_NAME", null)
     }
 
 
