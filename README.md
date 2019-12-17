@@ -1,7 +1,7 @@
 # EEU-Program
 estimate electric used in everyday life
 
-#Information
+<h2>Information</h2>
 จุดประสงค์
 -สร้างขึ้นเพื่อการคิดคำนวณค่าไฟในเเต่ละเดือนเเละเเสดงผลออกมาเป็นหน่วยไฟฟ้าที่ใช้ไปในเเต่ละเดือน (Unit)
 
