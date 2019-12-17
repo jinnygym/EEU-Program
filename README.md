@@ -15,7 +15,7 @@ Estimation of Electronic Usage in every day life
 <h3> Contributors </h3><br>
 
 - 62070005 นายกฤษกร เเก้วทองสวน <br>
-- 62070022 นายคณิน เชาวณัฏ <br>
+- 62070022 นายคณิน เชาวณัฏ (ดรอปฉุกเฉิน)<br>
 - 62070066 นายณัฐวัฒน์ ชวนิช <br>
 <br>
 
